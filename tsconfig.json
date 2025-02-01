@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2023", // Target version of ECMAScript
+    "module": "NodeNext", // Module system for Node.js
+    "moduleResolution": "NodeNext", // Module resolution strategy
+    "esModuleInterop": true, // Enable interoperability between CommonJS and ES Modules
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "strict": true, // Enable all strict type-checking options
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "resolveJsonModule": true, // Allow importing JSON modules
+    "outDir": "./dist", // Output directory for compiled files
+    "rootDir": "./src", // Root directory of source files
+    "jsx": "react-jsx", // JSX code generation mode for React
+    "allowJs": true,
+    "paths": {
+      // Path alias configuration
+      "app/*": ["./src/*"],
+      "assets/*": ["./src/assets/*"]
+    }
+  },
+  "include": ["src"], // Directories to include
+  "exclude": ["node_modules", "dist"] // Directories to exclude
+}

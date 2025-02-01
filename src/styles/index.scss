@@ -1,0 +1,119 @@
+/* IMPORTANT: In "styled" mode you must add the PrimeReact Theme here. Do NOT include in "unstyled" mode */
+@import 'primereact/resources/themes/lara-light-blue/theme.css';
+@import './css/theme-light.css';
+@import './css/layout-light.css';
+@import './css/primeflex.main.css';
+
+.p-inputtext,
+.p-dropdown,
+.p-multiselect {
+  background: transparent !important;
+}
+.p-w-100,
+.w-100 {
+  width: 100% !important;
+}
+.ltr {
+  direction: ltr !important ;
+  .layout {
+    margin-left: 250px !important;
+  }
+
+  .p-inputtext,
+  .p-dropdown,
+  .p-multiselect {
+    direction: ltr;
+  }
+}
+
+.rtl {
+  direction: rtl !important ;
+
+  .layout {
+    margin-right: 250px !important;
+  }
+
+  .p-inputtext,
+  .p-dropdown,
+  .p-multiselect {
+    direction: rtl;
+  }
+
+  *.p-breadcrumb-chevron {
+    transform: rotate(180deg);
+  }
+
+  .p-multiselect-clear-icon {
+    left: 0px !important;
+    position: relative !important;
+    right: 0px !important;
+    top: 20px !important;
+  }
+
+  .p-dropdown-clear-icon {
+    left: 0px !important;
+    position: relative !important;
+    right: 0px !important;
+    top: 13px !important;
+  }
+}
+
+/* Mobile devices (up to 767px) */
+@media (max-width: 767px) {
+  .ltr {
+    .translate-s-0 {
+      transform: translateX(0);
+    }
+
+    .translate-s-full {
+      transform: translateX(-250px);
+    }
+
+    .layout {
+      margin-left: 0 !important;
+    }
+  }
+
+  .rtl {
+    .translate-s-0 {
+      transform: translateX(0);
+    }
+
+    .translate-s-full {
+      transform: translateX(250px);
+    }
+
+    .layout {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+/* Tablet devices (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ltr {
+    .translate-s-0 {
+      transform: translateX(0);
+    }
+
+    .translate-s-full {
+      transform: translateX(-250px);
+    }
+    .layout {
+      margin-left: 0 !important;
+    }
+  }
+
+  .rtl {
+    .translate-s-0 {
+      transform: translateX(0);
+    }
+
+    .translate-s-full {
+      transform: translateX(250px);
+    }
+    .layout {
+      margin-right: 0 !important;
+    }
+  }
+}
