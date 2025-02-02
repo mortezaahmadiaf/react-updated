@@ -50,7 +50,7 @@ export const UserAccessLayout = () => {
           }  bg-black opacity-80 w-screen h-screen lg:hidden `}
         ></div>
         <aside
-          className={` max-w-[250px] transition-all ease-nav-brand  fixed inset-y-0  mt-[4rem] bg-blue-400   block w-full z-990  ${
+          className={` max-w-[250px] transition-all ease-nav-brand  fixed inset-y-0  mt-[4rem] bg-gradient-to-b from-[#176c9d] to-[#1999bf]   block w-full z-990  ${
             openMenuInMobile ? ' translate-s-0 ' : 'translate-s-full'
           } flex-wrap items-center justify-between overflow-y-auto   border-0 bg-primart p-0 antialiased  transition-transform duration-200  `}
         >
@@ -61,7 +61,7 @@ export const UserAccessLayout = () => {
             <ul className="flex flex-col pl-0 mb-0 mt-4">
               <li className={`w-full items-end flex lg:hidden`}>
                 <div
-                  className={` cursor-pointer   flex    items-center justify-start rounded-lg bg-blue-400  bg-center stroke-0 text-center `}
+                  className={` cursor-pointer   flex    items-center justify-start rounded-lg  bg-center stroke-0 text-center `}
                 >
                   {/* <img
                     src={logo}
@@ -95,7 +95,7 @@ export const UserAccessLayout = () => {
 
         {/* <!-- end sidenav --> */}
 
-        <main className="fixed w-full h-[4rem]  z-99999 transition-all duration-200 bg-blue-400 ">
+        <main className="fixed w-full h-[4rem]  z-99999 transition-all duration-200 bg-gradient-to-l from-[#176c9d] to-[#1999bf]  ">
           {/* <!-- Navbar --> */}
           <nav
             className="h-full bg-red-40 flex  flex-wrap items-center justify-between    transition-all duration-250 ease-soft-in  lg:flex-nowrap lg:justify-start"
